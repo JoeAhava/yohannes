@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import { FiClock, FiTag } from 'react-icons/fi';
-import PagesMetaHead from '../../components/PagesMetaHead';
-import { projectsData } from '../../data/projectsData';
-import RelatedProjects from '../../components/projects/RelatedProjects';
+import Image from "next/image";
+import { FiClock, FiTag } from "react-icons/fi";
+import PagesMetaHead from "../../components/PagesMetaHead";
+import { projectsData } from "../../data/projectsData";
+import RelatedProjects from "../../components/projects/RelatedProjects";
 
 function ProjectSingle(props) {
 	return (
@@ -35,7 +35,7 @@ function ProjectSingle(props) {
 				{props.project.ProjectImages.map((project) => {
 					return (
 						<div className="mb-10 sm:mb-0" key={project.id}>
-							<Image
+							<img
 								src={project.img}
 								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
 								alt={project.title}
@@ -58,30 +58,27 @@ function ProjectSingle(props) {
 							{props.project.ProjectInfo.ClientHeading}
 						</p>
 						<ul className="leading-loose">
-							{props.project.ProjectInfo.CompanyInfo.map(
-								(info) => {
-									return (
-										<li
-											className="font-general-regular text-ternary-dark dark:text-ternary-light"
-											key={info.id}
+							{props.project.ProjectInfo.CompanyInfo.map((info) => {
+								return (
+									<li
+										className="font-general-regular text-ternary-dark dark:text-ternary-light"
+										key={info.id}
+									>
+										<span>{info.title}: </span>
+										<a
+											href="https://stoman.me"
+											className={
+												info.title === "Website" || info.title === "Phone"
+													? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
+													: ""
+											}
+											aria-label="Project Website and Phone"
 										>
-											<span>{info.title}: </span>
-											<a
-												href="https://stoman.me"
-												className={
-													info.title === 'Website' ||
-													info.title === 'Phone'
-														? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
-														: ''
-												}
-												aria-label="Project Website and Phone"
-											>
-												{info.details}
-											</a>
-										</li>
-									);
-								}
-							)}
+											{info.details}
+										</a>
+									</li>
+								);
+							})}
 						</ul>
 					</div>
 
@@ -101,9 +98,7 @@ function ProjectSingle(props) {
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
 						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
-							{props.project.ProjectInfo.Technologies[0].techs.join(
-								', '
-							)}
+							{props.project.ProjectInfo.Technologies[0].techs.join(", ")}
 						</p>
 					</div>
 
@@ -160,9 +155,7 @@ export async function getServerSideProps({ query }) {
 	const { id } = query;
 	return {
 		props: {
-			project: projectsData.filter(
-				(project) => project.id === parseInt(id)
-			)[0],
+			project: projectsData.filter((project) => project.id === parseInt(id))[0],
 		},
 	};
 }
