@@ -1,24 +1,27 @@
-import { useState } from 'react';
-import { FiSearch } from 'react-icons/fi';
-import ProjectSingle from './ProjectSingle';
-import { projectsData } from '../../data/projectsData';
-import ProjectsFilter from './ProjectsFilter';
+import { useEffect, useState } from "react";
+import { FiSearch } from "react-icons/fi";
+import ProjectSingle from "./ProjectSingle";
+import { projectsData } from "../../data/projectsData";
+import ProjectsFilter from "./ProjectsFilter";
 
 function ProjectsGrid() {
-	const [searchProject, setSearchProject] = useState();
+	const [searchProject, setSearchProject] = useState(null);
 	const [selectProject, setSelectProject] = useState();
+	const [items, setItems] = useState(projectsData);
 
-	// @todo - To be fixed
-	// const searchProjectsByTitle = projectsData.filter((item) => {
-	// 	const result = item.title
-	// 		.toLowerCase()
-	// 		.includes(searchProject.toLowerCase())
-	// 		? item
-	// 		: searchProject == ''
-	// 		? item
-	// 		: '';
-	// 	return result;
-	// });
+	useEffect(() => {
+		const searchProjectsByTitle = () => {
+			setItems(
+				projectsData.filter((item) => {
+					return item.title.toLowerCase().includes(searchProject.toLowerCase());
+				}),
+			);
+		};
+
+		if (searchProject != null) {
+			searchProjectsByTitle();
+		}
+	}, [searchProject]);
 
 	const selectProjectsByCategory = projectsData.filter((item) => {
 		let category =
@@ -111,7 +114,7 @@ function ProjectsGrid() {
 					? selectProjectsByCategory.map((project, index) => {
 							return <ProjectSingle key={index} {...project} />;
 					  })
-					: projectsData.map((project, index) => (
+					: items.map((project, index) => (
 							<ProjectSingle key={index} {...project} />
 					  ))}
 			</div>

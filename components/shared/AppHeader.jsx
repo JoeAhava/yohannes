@@ -4,8 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import HireMeModal from "../HireMeModal";
-import logoLight from "../../public/images/logo-light.svg";
-import logoDark from "../../public/images/logo-dark.svg";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 function AppHeader() {
@@ -48,23 +46,35 @@ function AppHeader() {
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link href="/">
-							{activeTheme === "dark" ? (
-								<img
-									src={logoDark}
-									className="w-36 cursor-pointer"
-									alt="Dark Logo"
-									width={150}
-									height={120}
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className="w-36 cursor-pointer"
-									alt="Dark Logo"
-									width={150}
-									height={120}
-								/>
-							)}
+							{
+								<h1
+									className={`py-2 px-3 rounded-full flex items-center  ${
+										activeTheme === "dark"
+											? "bg-gray-700 text-white"
+											: "bg-gray-300 text-black"
+									}`}
+								>
+									<span className="font-bold text-2xl">Y</span>
+									<span
+									// className={`pl-[2px] pr-2 rounded-full rounded-l-none ${
+									// 	activeTheme !== "dark"
+									// 		? "bg-gray-700 text-white"
+									// 		: "bg-gray-300 text-black"
+									// }`}
+									>
+										ohannes
+									</span>
+								</h1>
+								// <img
+								// 	src={
+								// 		activeTheme === "dark"
+								// 			? "/images/logo-dark.svg"
+								// 			: "/images/logo-light.svg"
+								// 	}
+								// 	className="w-36 h-auto cursor-pointer"
+								// 	alt="Dark Logo"
+								// />
+							}
 						</Link>
 					</div>
 

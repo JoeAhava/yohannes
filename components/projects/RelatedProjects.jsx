@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import { projectsData } from "../../data/projectsData";
 
 const RelatedProject = {
 	title: "Related Projects",
@@ -33,14 +34,12 @@ function RelatedProjects() {
 				{RelatedProject.title}
 			</p>
 
-			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
-				{RelatedProject.Projects.map((project) => {
+			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10 h-[20vh]">
+				{projectsData.slice(0, 3).map((project) => {
 					return (
 						<img
 							src={project.img}
-							className="rounded-xl cursor-pointer"
-							width="400"
-							height="400"
+							className="rounded-xl cursor-pointer object-cover w-full h-[20vh]"
 							alt={project.title}
 							key={project.id}
 						/>

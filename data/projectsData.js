@@ -1,105 +1,94 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import {
 	FiFacebook,
 	FiInstagram,
 	FiLinkedin,
 	FiTwitter,
 	FiYoutube,
-} from 'react-icons/fi';
+} from "react-icons/fi";
 
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		url: 'google-health-platform',
-		category: 'Web Application',
-		img: '/images/web-project-2.jpg',
+		title: "Flip Academy",
+		url: "https://flipacademy.ca",
+		category: "Web Application",
+		img: "/images/flip_1.jpg",
 		ProjectHeader: {
-			title: 'Google Health Platform',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: "Flip Academy",
+			publishDate: "Jul 26, 2023",
+			tags: ["Fullstack Development", "Django", "React.JS"],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/ui-project-1.jpg',
+				title: "Flip Academy",
+				img: "/images/self_login.jpg",
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/web-project-2.jpg',
+				title: "Flip Academy",
+				img: "/images/flip_2.jpg",
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
-				img: '/images/mobile-project-2.jpg',
+				title: "Flip Academy",
+				img: "/images/flip_3.jpg",
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: "About Client",
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: "Name",
+					details: "Flip and Floss Inc.",
 				},
+				// {
+				// 	id: uuidv4(),
+				// 	title: "Description",
+				// 	details:
+				// 		"A Revolutionary Money App for Families. Designed to help kids learn, save, invest, and break generational cycles.",
+				// },
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'Web Development',
+					title: "Website",
+					details: "https://www.flipacademy.ca/",
 				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
+				// {
+				// 	id: uuidv4(),
+				// 	title: "Phone",
+				// 	details: "555 8888 888",
+				// },
 			],
-			ObjectivesHeading: 'Objective',
+			ObjectivesHeading: "Description",
 			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				"A Revolutionary Money App for Families. Designed to help kids learn, save, invest, and break generational cycles.",
 			Technologies: [
 				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
+					title: "Tools & Technologies",
+					techs: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCSS"],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: "Challenge",
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						"Flip & Floss is an innovative financial literacy platform designed to empower families by teaching children essential money management skills. Through its engaging mobile app, the platform offers a simulated banking experience complemented by animated courses and gamified learning tools. Children can personalize their learning journey by selecting avatars and customizing their dashboards, making financial education both fun and effective.",
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'A standout feature of Flip & Floss is its real debit card, which allows children to make actual purchases under parental supervision. Parents can assign chores, set savings goals, and reward achievements with "Flip Dollars," the platform\'s virtual currency. This hands-on approach helps children grasp the value of earning, saving, and spending responsibly, thereby fostering financial independence from an early age.',
 				},
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						"For educational institutions, Flip & Floss offers the Flip Academy program tailored for middle and high school students. This program aligns with educational standards and provides teachers with tools to create immersive, real-life financial simulations in the classroom. By integrating Flip & Floss into their curriculum, schools can equip students with the knowledge and skills necessary to navigate the evolving financial landscape confidently.",
 				},
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: "Share This",
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -136,96 +125,97 @@ export const projectsData = [
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
-		url: 'phoenix-digital-agency',
-		category: 'Mobile Application',
-		img: '/images/mobile-project-2.jpg',
+		title: "Selfe",
+		url: "selfe",
+		category: "Mobile Application",
+		img: "/images/selfe_login.jpg",
 		ProjectHeader: {
-			title: 'Phoenix Digital Agency',
-			publishDate: 'Jul 26, 2021',
-			tags: 'Mobile Application',
+			title: "Selfe",
+			publishDate: "N/A",
+			tags: ["Mobile Application", "Flutter", "Firebase", "Nuxt.JS"],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Phoenix Digital Agency',
-				img: '/images/ui-project-1.jpg',
+				title: "Selfe",
+				img: "/images/selfe_login.jpg",
+			},
+			// {
+			// 	id: uuidv4(),
+			// 	title: "Selfe",
+			// 	img: "/images/selfe_home.jpg",
+			// },
+			{
+				id: uuidv4(),
+				title: "Selfe",
+				img: "/images/selfe_events.jpg",
 			},
 			{
 				id: uuidv4(),
-				title: 'Phoenix Digital Agency',
-				img: '/images/web-project-2.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Phoenix Digital Agency',
-				img: '/images/mobile-project-2.jpg',
+				title: "Selfe",
+				img: "/images/selfe_event_details.jpg",
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: "About Client",
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: "Name",
+					details: "KBK Tech",
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
+					title: "Services",
+					details: "Software Development",
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: "Instagram",
+					details: "https://www.instagram.com/kbktech/?hl=en",
 				},
 			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+			ObjectivesHeading: "Description",
+			ObjectivesDetails: "",
 			Technologies: [
 				{
-					title: 'Tools & Technologies',
+					title: "Tools & Technologies",
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"Nuxt.js",
+						"TailwindCSS",
+						"Flutter",
+						"Firebase Auth",
+						"Firestore",
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: "Challenge",
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						"Selfe is a ticketing and event management platform that allows users to create, share, and discover events in their area. The platform offers a range of features, including event creation, ticket sales, and event discovery. Users can create events, set ticket prices, and share their events with friends and followers. The platform also includes a social feed where users can discover events happening in their area and follow other users.",
 				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+				// },
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+				// },
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+				// },
 			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: "Share This",
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),
@@ -262,474 +252,97 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
-		url: 'project-management-ui',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-1.jpg',
+		title: "Lovelocal",
+		url: "https://www.lovelocal.in/",
+		category: "Web Application",
+		img: "/images/selfe_login.jpg",
 		ProjectHeader: {
-			title: 'Project Management UI',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: "Selfe",
+			publishDate: "N/A",
+			tags: ["Web Application", "TailwindCSS", "Next.JS"],
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/ui-project-1.jpg',
+				title: "Selfe",
+				img: "/images/selfe_login.jpg",
+			},
+			// {
+			// 	id: uuidv4(),
+			// 	title: "Selfe",
+			// 	img: "/images/selfe_home.jpg",
+			// },
+			{
+				id: uuidv4(),
+				title: "Selfe",
+				img: "/images/selfe_events.jpg",
 			},
 			{
 				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/web-project-2.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Project Management UI',
-				img: '/images/mobile-project-2.jpg',
+				title: "Selfe",
+				img: "/images/selfe_event_details.jpg",
 			},
 		],
 		ProjectInfo: {
-			ClientHeading: 'About Client',
+			ClientHeading: "About Client",
 			CompanyInfo: [
 				{
 					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
+					title: "Name",
+					details: "KBK Tech",
 				},
 				{
 					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
+					title: "Services",
+					details: "Software Development",
 				},
 				{
 					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
+					title: "Instagram",
+					details: "https://www.instagram.com/kbktech/?hl=en",
 				},
 			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+			ObjectivesHeading: "Description",
+			ObjectivesDetails: "",
 			Technologies: [
 				{
-					title: 'Tools & Technologies',
+					title: "Tools & Technologies",
 					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"Nuxt.js",
+						"TailwindCSS",
+						"Flutter",
+						"Firebase Auth",
+						"Firestore",
 					],
 				},
 			],
-			ProjectDetailsHeading: 'Challenge',
+			ProjectDetailsHeading: "Challenge",
 			ProjectDetails: [
 				{
 					id: uuidv4(),
 					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						"Selfe is a ticketing and event management platform that allows users to create, share, and discover events in their area. The platform offers a range of features, including event creation, ticket sales, and event discovery. Users can create events, set ticket prices, and share their events with friends and followers. The platform also includes a social feed where users can discover events happening in their area and follow other users.",
 				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+				// },
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+				// },
+				// {
+				// 	id: uuidv4(),
+				// 	details:
+				// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+				// },
 			],
-			SocialSharingHeading: 'Share This',
-			// SocialSharing: [
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Twitter',
-			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Instagram',
-			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Facebook',
-			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'LinkedIn',
-			// 		icon: <FiLinkedin />,
-			// 		url: 'https://linkedin.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Youtube',
-			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/StomanStudio',
-			// 	},
-			// ],
-		},
-	},
-	{
-		id: 4,
-		title: 'Cloud Storage Platform',
-		url: 'cloud-storage-platform',
-		category: 'UI/UX Design',
-		img: '/images/ui-project-2.jpg',
-		ProjectHeader: {
-			title: 'Cloud Storage Platform',
-			publishDate: 'Jul 26, 2021',
-			tags: 'Web & Cloud',
-		},
-		ProjectImages: [
-			{
-				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/web-project-2.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Cloud Storage Platform',
-				img: '/images/mobile-project-2.jpg',
-			},
-		],
-		ProjectInfo: {
-			ClientHeading: 'About Client',
-			CompanyInfo: [
-				{
-					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
-				},
-				{
-					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
-				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
-			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
-			ProjectDetailsHeading: 'Challenge',
-			ProjectDetails: [
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-			],
-			SocialSharingHeading: 'Share This',
-			// SocialSharing: [
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Twitter',
-			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Instagram',
-			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Facebook',
-			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'LinkedIn',
-			// 		icon: <FiLinkedin />,
-			// 		url: 'https://linkedin.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Youtube',
-			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/StomanStudio',
-			// 	},
-			// ],
-		},
-	},
-	{
-		id: 5,
-		title: 'WeTalk Social Application',
-		url: 'wetalk-social-app',
-		category: 'Mobile Application',
-		img: '/images/mobile-project-1.jpg',
-		ProjectHeader: {
-			title: 'WeTalk Social Application',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
-		},
-		ProjectImages: [
-			{
-				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/web-project-2.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'WeTalk Social Application',
-				img: '/images/mobile-project-2.jpg',
-			},
-		],
-		ProjectInfo: {
-			ClientHeading: 'About Client',
-			CompanyInfo: [
-				{
-					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
-				},
-				{
-					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
-				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
-			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
-			ProjectDetailsHeading: 'Challenge',
-			ProjectDetails: [
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-			],
-			SocialSharingHeading: 'Share This',
-			// SocialSharing: [
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Twitter',
-			// 		icon: <FiTwitter />,
-			// 		url: 'https://twitter.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Instagram',
-			// 		icon: <FiInstagram />,
-			// 		url: 'https://instagram.com/realstoman',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Facebook',
-			// 		icon: <FiFacebook />,
-			// 		url: 'https://facebook.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'LinkedIn',
-			// 		icon: <FiLinkedin />,
-			// 		url: 'https://linkedin.com/',
-			// 	},
-			// 	{
-			// 		id: uuidv4(),
-			// 		name: 'Youtube',
-			// 		icon: <FiYoutube />,
-			// 		url: 'https://www.youtube.com/c/realstoman',
-			// 	},
-			// ],
-		},
-	},
-	{
-		id: 6,
-		title: 'Apple New Design System',
-		url: 'apple-new-design-system',
-		category: 'Web Application',
-		img: '/images/web-project-1.jpg',
-		ProjectHeader: {
-			title: 'Apple New Design System',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
-		},
-		ProjectImages: [
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/ui-project-1.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/web-project-2.jpg',
-			},
-			{
-				id: uuidv4(),
-				title: 'Kabul Apple New Design System',
-				img: '/images/mobile-project-2.jpg',
-			},
-		],
-		ProjectInfo: {
-			ClientHeading: 'About Client',
-			CompanyInfo: [
-				{
-					id: uuidv4(),
-					title: 'Name',
-					details: 'Company Ltd',
-				},
-				{
-					id: uuidv4(),
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
-				},
-				{
-					id: uuidv4(),
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: uuidv4(),
-					title: 'Phone',
-					details: '555 8888 888',
-				},
-			],
-			ObjectivesHeading: 'Objective',
-			ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
-			ProjectDetailsHeading: 'Challenge',
-			ProjectDetails: [
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: uuidv4(),
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-			],
-			SocialSharingHeading: 'Share This',
+			// SocialSharingHeading: "Share This",
 			// SocialSharing: [
 			// 	{
 			// 		id: uuidv4(),

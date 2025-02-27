@@ -14,35 +14,47 @@ function ProjectSingle(props) {
 				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
 					{props.project.ProjectHeader.title}
 				</p>
-				<div className="flex">
+				<div className="flex flex-wrap items-center gap-2">
 					<div className="flex items-center mr-10">
 						<FiClock className="text-xl text-ternary-dark dark:text-ternary-light" />
 						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
 							{props.project.ProjectHeader.publishDate}
 						</span>
 					</div>
-					<div className="flex items-center">
-						<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
-						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-							{props.project.ProjectHeader.tags}
-						</span>
-					</div>
+					{typeof props.project.ProjectHeader?.tags === "string" ? (
+						<div className="flex items-center">
+							<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
+							<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
+								{props.project.ProjectHeader.tags}
+							</span>
+						</div>
+					) : (
+						props.project.ProjectHeader?.tags.map((tag, i) => (
+							<div
+								key={i}
+								className=" flex items-center space-x-2 bg-gray-400 py-2 px-3 rounded-full"
+							>
+								<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
+								<span className="font-general-regular leading-none text-primary-dark dark:text-primary-light">
+									{tag}
+								</span>
+							</div>
+						))
+					)}
 				</div>
 			</div>
 
 			{/* Gallery */}
-			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+			<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-5 mt-12">
 				{props.project.ProjectImages.map((project) => {
 					return (
 						<div className="mb-10 sm:mb-0" key={project.id}>
 							<img
 								src={project.img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+								className="rounded-xl object-cover cursor-pointer shadow-lg sm:shadow-none"
 								alt={project.title}
 								key={project.id}
 								layout="responsive"
-								width={100}
-								height={90}
 							/>
 						</div>
 					);
@@ -50,14 +62,14 @@ function ProjectSingle(props) {
 			</div>
 
 			{/* Info */}
-			<div className="block sm:flex gap-0 sm:gap-10 mt-14">
-				<div className="w-full sm:w-1/3 text-left">
+			<div className="flex flex-col sm:flex-row gap-4 sm:gap-10 mt-14">
+				<div className="w-auto sm:w-1/3 text-left">
 					{/* Single project client details */}
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
 							{props.project.ProjectInfo.ClientHeading}
 						</p>
-						<ul className="leading-loose">
+						<ul className="leading-loose px-2">
 							{props.project.ProjectInfo.CompanyInfo.map((info) => {
 								return (
 									<li
@@ -66,7 +78,7 @@ function ProjectSingle(props) {
 									>
 										<span>{info.title}: </span>
 										<a
-											href="https://stoman.me"
+											href={info.details || "#"}
 											className={
 												info.title === "Website" || info.title === "Phone"
 													? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"

@@ -1,8 +1,11 @@
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	"Web Application",
+	"Mobile Application",
+	"UI/UX Design",
+	"Full Stack Development",
+	"Frontend Development",
+	"QA Testing",
+	"Backend Development",
 ];
 
 function ProjectsFilter({ setSelectProject }) {
